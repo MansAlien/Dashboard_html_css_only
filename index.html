@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Bootstrap Framework -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- The title of the website -->
+    <title>Dashboard HTML CSS</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Start Sidebar -->
+      <aside id="sidebar">
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="toggler-btn">
+          <i class="fa-solid fa-grid"></i>
+        </label>
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-light fa-user"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-regular fa-clipboard-list-check"></i>
+              <span>Task</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-light fa-shield-keyhole"></i>
+              <span>Auth</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-solid fa-messages"></i>
+              <span>Notification</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-regular fa-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-thin fa-file-lines"></i>
+              <span>Page</span>
+            </a>
+          </li>
+        </ul>
+        <div class="sidebar-footer">
+          <a href="#" class="sidebar-link">
+            <i class="fa-regular fa-power-off"></i>
+            <span>Logout</span>
+          </a>
+        </div>
+      </aside>
+      <!-- End Sidebar -->
+      <div class="main">
+        <!-- Start Navbar -->
+        <div class="dashboard-navbar">
+          <form action="#">
+            <div class="nav-search">
+              <input type="text" class="search-query" placeholder="search...">
+              <button class="btn" type="button">search</button>
+            </div>
+          </form>
+          <div class="navbar-content">
+            <ul class="main-nav">
+              <li class="user-link">
+                <a href="#">
+                  <img src="imgs/account.png" alt="Profile" class="avatar">
+                </a>
+                <div class="user-link-dropdown">
+                  <a href="#" class="dropdown-item">Profile</a>
+                  <a href="#" class="dropdown-item">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Navbar -->
+
+        <!-- Start Main Dashboard Content -->
+        <div class="content">
+          <h2>Statistics & Reports</h2>
+          <div class="dashboard-card">
+            <div class="card">
+              <h6 class="title">Members Progress</h6>
+              <h6 class="amount">$72,561</h6>
+              <div class="badge">
+                <span class="text-sucess-bg">+8.76%</span>
+                <span class="badge-text">Since Last Month</span>
+              </div>
+            </div>
+            <div class="card">
+              <h6 class="title">Authers Earning</h6>
+              <h6 class="amount">$72,561</h6>
+              <div class="badge">
+                <span class="text-sucess-bg">+8.76%</span>
+                <span class="badge-text">Since Last Month</span>
+              </div>
+            </div>
+            <div class="card">
+              <h6 class="title">Totle Users</h6>
+              <h6 class="amount">$72,561</h6>
+              <div class="badge">
+                <span class="text-sucess-bg">+8.76%</span>
+                <span class="badge-text">Since Last Month</span>
+              </div>
+            </div>
+          </div>
+          <h2>Avg. Agent Earning</h2>
+          <div style="overflow-x: auto;">
+            <table id="posts">
+              <thead>
+                <tr>
+                  <th style="width: 5%;">SN</th>
+                  <th style="width: 45%;">Name</th>
+                  <th style="width: 45%;">Email</th>
+                  <th style="width: 5%;">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>jane@example.com</td>
+                    <td><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bob Johnson</td>
+                    <td>bob@example.com</td>
+                    <td><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Alice Williams</td>
+                    <td>alice@example.com</td>
+                    <td><a href="#">Edit</a></td>
+                </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- End Main Dashboard Content -->
+
+        <!-- Start Dashboard Footer -->
+        <footer>
+          <div class="footer-wrap">
+            <div class="copyright-text">
+              <p>
+                © Copyright 2023 by <strong>Mans_Alien</strong>
+              </p>
+            </div>
+            <ul class="social-icons">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </footer>
+        <!-- End Dashboard Footer -->
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
